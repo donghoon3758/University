@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.13: table2.html -->
+<!-- Complex HTML5 table. -->
+<html>
+	<head>
+    	<meta charset = "utf-8">
+		<title>Tables</title>
+	</head>
+	<body>
+
+		<h1>학생증</h1>
+		<table border = "1">
+        <thead>
+        	<!-- rowspans and colspans merge the specified-->
+            <!-- number of cells vertically or horizontally -->
+            <tr>
+            	<!-- merge two rows-->
+                <th rowspan = "2">
+                	<img src = "me.jpg" width = "200"
+                    	height = "200" alt = "Picture of me">
+                </th>
+                <!-- merge three columns -->
+                <th colspan = "3">
+                	부산대학교
+                </th>
+             </tr>
+             <tr>
+             	<th>201724526</th>
+                <th>1998.04.02</th>
+                <th>전기컴퓨터공학부</th>
+             </tr>
+       	</thead>
+        <tbody>
+
+            <tr>
+            	<th>이동훈</th>
+                <td><!-- merge two columns -->
+                <th colspan = "2">
+                01063284440
+                </td>
+
+            </tr>
+        </tbody>
+     </table>
+  </body>
+</html>
+                
+
+</body>
+</html>
