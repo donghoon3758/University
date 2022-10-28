@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>JQuery AJAX 예제</title>
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(document).keyup(function() {
+		$.get('jquery_01.jsp',{
+			number: $('#number').val()
+			,ID: $('#ID').val()
+			,comment: $('#comment').val()
+		}, function(data){
+			$('#messaage').html(data);
+		});	
+	});
+});
+</script>
+</head>
+
+<body>
+	<h1>jQuery AJAX 예제</h1>
+	글번호:<input type = "text" id = "number" size="12" maxlength = "12">
+	<br>아이디:<input type = "text" id = "ID" size="12" maxlength = "12">
+	<br>코멘트:<input type = "text" id = "comment" size="12" >
+	<div id = "messaage"></div>
+</body>
+</html>
