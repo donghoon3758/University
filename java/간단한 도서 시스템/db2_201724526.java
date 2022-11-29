@@ -31,7 +31,7 @@ public class db2_201724526 {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/bookdb","root","3751");
-			System.out.println("DB ¿¬°á ¼º°î");
+			System.out.println("DB ì—°ê²° ì„±ê³µ");
 			stmt=conn.createStatement();
 
 		while(true) {
@@ -90,14 +90,14 @@ public class db2_201724526 {
 				break;	
 			}
 		}
-		System.out.println("Á¾·áÇÕ´Ï´Ù.");
+		System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 		}catch(ClassNotFoundException e)
 		{
-			System.out.println("JDBCµå¶óÀÌ¹ö ·Îµå ½ÇÆĞ");
+			System.out.println("JDBCë“œë¼ì´ë²„ ë¡œë“œ ì‹¤íŒ¨");
 		}
 		catch(SQLException e)
 		{
-			System.out.println("SQL ½ÇÇà ¿¡·¯");
+			System.out.println("SQL ì‹¤í–‰ ì—ëŸ¬");
 		}
 	}
 	private static void printTable(Statement stmt) throws SQLException
